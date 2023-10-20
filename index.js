@@ -17,13 +17,6 @@ app.get('/myData', (req, res) => {
 });
 
 
-// DB_USER=assignment10
-// DB_PASS=kHaDiUUEErHmnpuG
-
-// console.log(process.env.DB_USER);
-// console.log(process.env.DB_PASS);
-
-
 
 
 
@@ -46,6 +39,30 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
+
+    const productCollection = client.db("assignment10").collection("product")
+
+    app.get('/addProduct', async (req, res) => {
+      const cursor = productCollection.find();
+      const result = await cursor.toArray();
+      res.send(result);
+    });
+
+    // send client data to server
+    app.post('/addProduct', async (req, res) => {
+      const product = req.body;
+      const result = await productCollection.insertOne(product);
+      res.send(result);
+  });
+
+
+
+
+
+
+
+
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
