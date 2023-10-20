@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Apple Mobile",
+      "img": "https://m.media-amazon.com/images/I/71ZDY57yTQL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Samsung Mobile",
+      "img": "https://www.mobiledokan.com/wp-content/uploads/2023/02/Samsung-Galaxy-S23-Ultra.jpg.webp"
+    },
+    {
+      "id": 3,
+      "name": "Nokia Mobile",
+      "img": "https://www.mobiledokan.com/wp-content/uploads/2021/09/Nokia-3.4-image.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Infinix Mobile",
+      "img": "https://www.mobilebazar.com.bd/assets/img/Infinix-Note-8-Official-image-1-499x499.webp"
+    },
+    {
+      "id": 5,
+      "name": "One Plus Mobile",
+      "img": "https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/catalog/product/cache/90e3b9f4120fc209bf60003e3b0e1323/o/n/oneplus-11-5g-eternal-green-7_1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Techno Mobile Phone",
+      "img": "https://www.mobilebazar.com.bd/assets/img/TECNO-Spark-5-Ice-Jadeite.jpg"
+    }
+  ]
+  
