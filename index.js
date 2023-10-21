@@ -18,8 +18,6 @@ app.get('/myData', (req, res) => {
 
 
 
-
-
 // MongoDB Connection:
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.wlyyget.mongodb.net/?retryWrites=true&w=majority`;
@@ -92,13 +90,6 @@ async function run() {
       const result = await productCollection.updateOne(filter, addProduct, options);
       res.send(result);
     });
-
-
-
-
-
-
-
 
 
 
